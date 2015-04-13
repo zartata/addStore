@@ -1,0 +1,222 @@
+@import url(http://fonts.googleapis.com/css?family=Source+Code+Pro|Roboto:400,700,400italic);
+body {
+  margin: 0;
+  padding: 16px;
+  font-size: 18px;
+  line-height: 28px;
+  font-family: 'Roboto', sans-serif;
+  color: #222222;
+  max-width: 900px;
+  margin: 0 auto;
+}
+h2 {
+  border-bottom: 2px solid #f0f0f0;
+  line-height: 20px;
+}
+a {
+  color: inherit;
+}
+code {
+  background-color: #f9f9f9;
+  border: 1px solid #f0f0f0;
+  font-family: 'Source Code Pro', monospace;
+  padding: 1px 4px;
+  border-radius: 2px;
+}
+/* Orange */
+.js .number,
+.jquery .number {
+  color: #ff6633;
+}
+/* Blue */
+.css .class,
+.js .function,
+.jquery .function,
+.js .key,
+.jquery .key,
+.tag {
+  color: #3366ff;
+}
+/* Green */
+.css .value,
+.js .string,
+.jquery .string,
+.value {
+  color: #009900;
+}
+/* Black */
+.css .rules {
+  color: #000000;
+}
+/* Purple */
+.attribute,
+.js .kwd,
+.js .keyword,
+.jquery .kwd,
+.jquery .keyword,
+.css .attribute {
+  color: #9900cc;
+}
+/* Red */
+.js .object,
+.jquery .object {
+  color: #ff3366;
+}
+/* Light Blue */
+.js .var,
+.js .variable,
+.jquery .var,
+.jquery .variable {
+  color: #6699ff;
+}
+pre {
+  display: block;
+  background-color: #f9f9f9;
+  border: 1px solid #f0f0f0;
+  font-family: 'Source Code Pro', monospace;
+  padding: 16px;
+  border-radius: 2px;
+  overflow: auto;
+  max-height: 500px;
+}
+pre code {
+  background-color: transparent;
+  border: 0;
+  padding: 0;
+  border-radius: 0;
+}
+.html,
+.js,
+.jquery,
+.css,
+#log,
+.php {
+  position: relative;
+}
+.html:before,
+.js:before,
+.jquery:before,
+.css:before,
+#log:before,
+.php:before {
+  position: absolute;
+  top: 1px;
+  right: 1px;
+  background-color: rgba(230,230,230,0.5);
+  padding: 8px 32px 8px 16px;
+  border-radius: 0 3px 0 3px;
+}
+.html:before {
+  content: "HTML"; 
+}
+.js:before {
+  content: "JavaScript"; 
+}
+.jquery:before {
+  content: "jQuery"; 
+}
+.css:before {
+  content: "CSS"; 
+}
+.php:before {
+  content: "PHP"; 
+}
+#log pre {
+  height: 400px;
+  padding: 0;
+}
+#log:before {
+  content: "Console Log"; 
+}
+.log-item {
+  display: block;
+  border-bottom: 1px solid #eeeeee;
+  padding: 4px 8px;
+}
+.log-clear {
+  position: absolute;
+  bottom: 8px;
+  right: 8px;
+}
+form {
+  display: block;
+  border: 2px dashed #dddddd;
+  border-radius: 5px;
+  padding: 16px;
+  margin: 16px;
+}
+input:not([type=checkbox]):not([type=radio]),
+select,
+textarea {
+  display: block;
+  width: calc(100% - 32px);
+  font-size: inherit;
+  min-width: 200px;
+  border: 1px solid #aaaaaa;
+  border-radius: 2px;
+  background-color: transparent;
+  padding: 8px 16px;
+  outline: none;
+  font-family: monospace;
+  transition: box-shadow 0.1s;
+  margin: 8px 0;
+}
+select {
+  width: 100%;
+}
+textarea {
+  height: 8em;
+  resize: vertical;
+}
+input:not([type=checkbox]):not([type=radio]):focus,
+select:focus,
+textarea:focus {
+  border: 1px solid #3366ff;
+  box-shadow:
+    0 0 3px #3366ff;
+}
+output {
+  display: inline-block;
+  vertical-align: top;
+  border: 1px solid #dddddd;
+  min-width: 219px;
+  padding: 5px 16px;
+  overflow: auto;
+  min-height: 23px;
+  font-family: 'Source Code Pro', monospace;
+}
+.fa-arrow-right, .fa-arrow-left {
+  display: inline-block;
+  padding: 8px 16px;
+}
+button .fa-arrow-right,
+button .fa-arrow-left {
+  padding: 0;
+}
+.placeholder {
+  color: #999999;
+}
+form p {
+  margin-top: 0;
+}
+button {
+  background-color: #cccccc;
+  border: 0;
+  border-radius: 3px;
+  padding: 8px 16px;
+  margin: 8px 0;
+  outline: none;
+  cursor: pointer;
+  transition: background 0.3s;
+}
+button:hover {
+  background-color: #bbbbbb;
+}
+
+
+
+
+
+
+
+
