@@ -1,24 +1,29 @@
 <!doctype html>
 <html>
 <head>
-  <title>addCart</title>
+  <title>Project: Example Name</title>
   <meta charset="UTF-8">
   <meta name="viewport" content="initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
   <script src='http://code.jquery.com/jquery-2.1.1.min.js'></script>
-  <script src='examples.js'></script>
-  <link rel='stylesheet' href='examples.css' />
-</head>
-<body>
-  <div data-addui='store'></div>
-  <script src='https://checkout.stripe.com/checkout.js'></script>
   <script src='../src/addStore.js'></script>
   <link rel='stylesheet' href='../src/skins/addStore.skin-simple.css' />
-  <script>
-    $add.Store.settings.stripeKey = "pk_test_4KtVe73dkBoVhpiNnQJTsSUx";
-    $add.Store.settings.paymentHandler = "../src/addStore.php";
-    $add.Store.settings.storeFile = "../examples/store.json";
-    $add.Store.settings.shipping = false;
-    $add.Store.load.fromFile("store.json");
-  </script>
+</head>
+<body>
+  <div
+    data-addui="store"
+    data-src="../src/"
+  ></div>
+  <div id='custom-checkout' style='display: none;'>
+    <form onsubmit="return false;">
+      <h1>Custom Checkout</h1>
+      <input placeholder='Name' />
+      <input placeholder='Credi Card Number' />
+      <button onclick='$add.Store.action.emptyCart();location.href="#!/thankyou"'>Pay</button>
+    </form>
+  </div>
+  <div id='thankyou'>
+    <h1>You Rock!</h1>
+    <p>Thank you for purchasing these awesome items.</p>
+  </div>
 </body>
 </html>

@@ -1,0 +1,226 @@
+*[class^=addui-store] {
+  box-sizing: border-box;
+  -moz-box-sizing: border-box;
+}
+.addui-store-nav {
+  display: block;
+  background-color: #eeeeee;
+  text-align: right;
+  margin: 8px;
+}
+.addui-store-minicart {
+  display: inline-block;
+  margin: 4px 16px;
+  padding: 4px 16px;
+  text-decoration: none;
+  border: 1px solid black;
+}
+.addui-store-minicart-divider {
+  display: inline-block;
+  margin: 2px 8px;
+  width: 1px;
+  height: 24px;
+  background-color: #000000;
+  vertical-align: top;
+}
+.addui-store-categoryNav,
+.addui-store-cart-checkout {
+  display: inline-block;
+  width: 256px;
+  background-color: #eeeeee;
+  margin: 8px;
+  vertical-align: top;
+}
+.addui-store-featured,
+.addui-store-category,
+.addui-store-categories .addui-store-categoryList,
+.addui-store-product-info,
+.addui-store-itemList {
+  display: inline-block;
+  vertical-align: top;
+  width: calc(100% - 288px);
+  margin: 8px;
+  border: 2px dashed #eeeeee;
+}
+.addui-store-productSnippet {
+  display: block;
+  background-color: #eeeeee;
+  margin-bottom: 16px;
+  padding: 8px;
+}
+.addui-store-productSnippet:last-child {
+  margin-bottom: 0;
+}
+.addui-store-productSnippet-image,
+.addui-store-categorySnippet-image,
+.addui-store-item-image {
+  display: inline-block;
+  width: 125px;
+  vertical-align: top;
+}
+.addui-store-thumb {
+  display: inline-block;
+  width: 125px;
+  height: 125px;
+  background-size: cover;
+  background-position: center center;
+  background-repeat: no-repeat;
+}
+.addui-store-productSnippet-name {
+  font-size: 24px;
+  text-decoration: none;
+}
+.addui-store-categorySnippet-info,
+.addui-store-productSnippet-info {
+  display: inline-block;
+  width: calc(100% - 225px);
+  vertical-align: top;
+  padding: 8px 16px;
+}
+.addui-store-categorySnippet-info {
+  width: calc(100% - 125px);
+}
+.addui-store-categorySnippet-noimage .addui-store-categorySnippet-info {
+  width: 100%;
+}
+.addui-store-productSnippet-noimage .addui-store-productSnippet-info {
+  width: calc(100% - 100px);
+}
+.addui-store-productSnippet-cart {
+  display: inline-block;
+  width: 100px;
+  vertical-align: top;
+  height: 100%;
+  padding: 8px 0;
+  font-size: 22px;
+}
+.addui-store-productSnippet-cart-price {
+  display: block;
+  width: 100px;
+  text-align: center;
+}
+.addui-store-category-image {
+  display: block;
+  width: 100%;
+  text-align: center;
+}
+.addui-store-category-image img {
+  max-width: 100%;
+}
+.addui-store-product-sidebar {
+  display: inline-block;
+  width: 256px;
+}
+.addui-store-price-qtyRange {
+  display: inline-block;
+}
+.addui-store-price-qtyRange:after {
+  content: " for ";
+  margin-left: 4px;
+  margin-right: 8px;
+}
+.addui-store-price-value {
+  display: inline-block;
+  font-weight: 700;
+}
+.addui-store-product-name {
+  display: block;
+  font-size: 36px;
+  text-align: center;
+  margin: 16px 0;
+}
+.addui-store-imageList {
+  display: block;
+  text-align: center;
+}
+.addui-store-imageList img {
+  max-width: 100%;
+}
+
+.addui-store-item {
+  display: block;
+  position: relative;
+}
+.addui-store-item-info {
+  display: inline-block;
+  width: calc(100% - 325px);
+  vertical-align: top;
+}
+.addui-store-item-cart {
+  display: inline-block;
+  width: 200px;
+  vertical-align: top;
+}
+.addui-store input[type=number].addui-store-item-cart-qty {
+  display: inline-block;
+  width: 75px;
+  min-width: 75px;
+}
+.addui-store-item-cart-price {
+  display: inline-block;
+}
+.addui-store-item-cart-price:before {
+  content: " @ ";
+  margin-left: 8px;
+}
+.addui-store-item-cart-price:after {
+  content: " = ";
+}
+.addui-store-item-cart-total {
+  display: block;
+  font-size: 22px;
+  font-weight: 700;
+}
+.addui-store-cart-checkout {
+  text-align: center;
+}
+.addui-store-cart-itemCount:before {
+  content: "Items";
+  display: block;
+  font-weight: 400;
+  font-size: 0.75em;
+}
+.addui-store-cart-itemCount {
+  font-weight: 700;
+  font-size: 1.5em;
+}
+.addui-store-cart-total {
+  font-weight: 700;
+  font-size: 1.5em;
+}
+.addui-store-cart-total:before {
+  content: "Total:";
+  display: block;
+  font-weight: 400;
+  font-size: 0.75em;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

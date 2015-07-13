@@ -1,0 +1,638 @@
+{
+  "settings": {
+    "storename": "addstore",
+    "src": "../src/",
+    "import": "store.json",
+    "importsrc": "../src/store.json",
+    "autosave": true,
+    "autoload": true,
+    "selector": "*[data-addui=store]",
+    "stripe": "pk_test_ibhRmgLIFskFWTvJAMOe9AOi",
+    "paypal": false,
+    "logo": "images/addStore.png",
+    "customcheckoutselector": "#custom-checkout",
+    "thankyouselector": "#thankyou",
+    "thankyoutext": "<h1>Thank You</h1><p>Your order has been submitted. Please check your email for confirmation.</p>",
+    "addui": "store"
+  },
+  "products": [{
+    "name": "Steak",
+    "slug": "steak",
+    "description": "1 pound of steak",
+    "prices": [{
+      "min_qty": false,
+      "max_qty": false,
+      "value": 5.99
+    }],
+    "images": [{
+      "src": "images/product-steak.jpg",
+      "thumb": "images/product-steak.jpg",
+      "caption": ""
+    }, {
+      "src": "images/product-steak-2.jpg",
+      "thumb": "images/product-steak-2.jpg",
+      "caption": ""
+    }],
+    "options": [],
+    "categories": ["meat"],
+    "featured": false,
+    "mix_match": false,
+    "shipping": {
+      "type": "box",
+      "size": 5,
+      "value": 1.25
+    }
+  }, {
+    "name": "Bacon",
+    "slug": "bacon",
+    "description": "1 pound of bacon",
+    "prices": [{
+      "min_qty": false,
+      "max_qty": false,
+      "value": 1.99
+    }],
+    "images": [{
+      "src": "images/product-bacon.jpg",
+      "thumb": "images/product-bacon.jpg",
+      "caption": ""
+    }],
+    "options": [],
+    "categories": ["meat"],
+    "featured": false,
+    "mix_match": false,
+    "shipping": {
+      "type": "each",
+      "value": 0
+    }
+  }, {
+    "name": "Carrots",
+    "slug": "carrots",
+    "description": "A 3 pound bag of carrots.",
+    "prices": [{
+      "min_qty": false,
+      "max_qty": false,
+      "value": 1.99
+    }],
+    "images": [{
+      "src": "images/product-carrots.jpg",
+      "thumb": "images/product-carrots.jpg",
+      "caption": ""
+    }],
+    "options": [],
+    "categories": ["vegetables"],
+    "featured": false,
+    "mix_match": false,
+    "shipping": false
+  }, {
+    "name": "Tomatoes",
+    "slug": "tomatoes",
+    "description": "Fresh Tomatoes for $1.99/lb",
+    "prices": [{
+      "min_qty": false,
+      "max_qty": false,
+      "value": 1.99
+    }],
+    "images": [{
+      "src": "images/product-tomatoes.jpg",
+      "thumb": "images/product-tomatoes.jpg",
+      "caption": ""
+    }],
+    "options": [],
+    "categories": ["vegetables"],
+    "featured": false,
+    "mix_match": false,
+    "shipping": false
+  }, {
+    "name": "Cucumber",
+    "slug": "cucumber",
+    "description": false,
+    "prices": [{
+      "min_qty": false,
+      "max_qty": false,
+      "value": 0.99
+    }],
+    "images": [{
+      "src": "images/product-cucumber.jpg",
+      "thumb": "images/product-cucumber.jpg",
+      "caption": ""
+    }],
+    "options": [],
+    "categories": ["vegetables"],
+    "featured": false,
+    "mix_match": false,
+    "shipping": false
+  }, {
+    "name": "Apples",
+    "slug": "apples",
+    "description": "Fresh Apples for $1.99/lb",
+    "prices": [{
+      "min_qty": false,
+      "max_qty": false,
+      "value": 1.99
+    }],
+    "images": [{
+      "src": "images/product-apples.jpg",
+      "thumb": "images/product-apples.jpg",
+      "caption": ""
+    }],
+    "options": [],
+    "categories": ["fruits"],
+    "featured": false,
+    "mix_match": false,
+    "shipping": false
+  }, {
+    "name": "Banannas",
+    "slug": "banannas",
+    "description": "Fresh Banannas for 99&cent; /lb",
+    "prices": [{
+      "min_qty": false,
+      "max_qty": false,
+      "value": 0.99
+    }],
+    "images": [{
+      "src": "images/product-banannas.jpg",
+      "thumb": "images/product-banannas.jpg",
+      "caption": ""
+    }],
+    "options": [],
+    "categories": ["fruits"],
+    "featured": false,
+    "mix_match": false,
+    "shipping": false
+  }, {
+    "name": "Pear",
+    "slug": "pear",
+    "description": "Fresh Pear",
+    "prices": [{
+      "min_qty": false,
+      "max_qty": false,
+      "value": 0.99
+    }],
+    "images": [{
+      "src": "images/product-pear.jpg",
+      "thumb": "images/product-pear.jpg",
+      "caption": ""
+    }],
+    "options": [],
+    "categories": ["fruits"],
+    "featured": false,
+    "mix_match": false,
+    "shipping": false
+  }, {
+    "name": "Men's Dress Shirt",
+    "slug": "mens-dress-shirt",
+    "description": false,
+    "prices": [{
+      "min_qty": false,
+      "max_qty": 11,
+      "value": 29.99
+    }, {
+      "min_qty": 12,
+      "max_qty": 23,
+      "value": 24.99
+    }, {
+      "min_qty": 24,
+      "max_qty": false,
+      "value": 19.99
+    }],
+    "images": [{
+      "src": "images/product-mens-dress-shirt.jpg",
+      "thumb": "images/product-mens-dress-shirt.jpg",
+      "caption": ""
+    }],
+    "options": [],
+    "categories": ["shirts"],
+    "featured": false,
+    "mix_match": false,
+    "shipping": false
+  }, {
+    "name": "Mens Flannels",
+    "slug": "mens-flannels",
+    "description": "Stay warm with a flannel",
+    "prices": [{
+      "min_qty": false,
+      "max_qty": false,
+      "value": 19.99
+    }],
+    "images": [{
+      "src": "images/product-mens-flannel.jpg",
+      "thumb": "images/product-mens-flannel.jpg",
+      "caption": ""
+    }],
+    "options": [[{
+      "name": "Red",
+      "description": false,
+      "price_adjustment": false,
+      "image": false
+    }, {
+      "name": "Blue",
+      "description": false,
+      "price_adjustment": false,
+      "image": false
+    }, {
+      "name": "Green",
+      "description": false,
+      "price_adjustment": false,
+      "image": false
+    }, {
+      "name": "Yellow",
+      "description": false,
+      "price_adjustment": false,
+      "image": false
+    }, {
+      "name": "White",
+      "description": false,
+      "price_adjustment": -0.99,
+      "image": false
+    }], [{
+      "name": "Medium",
+      "description": false,
+      "price_adjustment": false,
+      "image": false
+    }, {
+      "name": "X Small",
+      "description": false,
+      "price_adjustment": false,
+      "image": false
+    }, {
+      "name": "Small",
+      "description": false,
+      "price_adjustment": false,
+      "image": false
+    }, {
+      "name": "Large",
+      "description": false,
+      "price_adjustment": false,
+      "image": false
+    }, {
+      "name": "X Large",
+      "description": false,
+      "price_adjustment": 1,
+      "image": false
+    }, {
+      "name": "XX Large",
+      "description": false,
+      "price_adjustment": 1.99,
+      "image": false
+    }]],
+    "categories": ["shirts"],
+    "featured": false,
+    "mix_match": false,
+    "shipping": {
+      "type": "box",
+      "value": 2.49,
+      "size": "5"
+    }
+  }, {
+    "name": "Mens Jeans",
+    "slug": "mens-jeans",
+    "description": false,
+    "prices": [{
+      "min_qty": false,
+      "max_qty": false,
+      "value": 34.99
+    }],
+    "images": [{
+      "src": "images/product-mens-jeans.jpg",
+      "thumb": "images/product-mens-jeans.jpg",
+      "caption": ""
+    }],
+    "options": [[{
+      "name": "26\" Waist",
+      "description": false,
+      "price_adjustment": false,
+      "image": false
+    }, {
+      "name": "28\" Waist",
+      "description": false,
+      "price_adjustment": false,
+      "image": false
+    }, {
+      "name": "30\" Waist",
+      "description": false,
+      "price_adjustment": false,
+      "image": false
+    }, {
+      "name": "32\" Waist",
+      "description": false,
+      "price_adjustment": false,
+      "image": false
+    }, {
+      "name": "34\" Waist",
+      "description": false,
+      "price_adjustment": false,
+      "image": false
+    }, {
+      "name": "36\" Waist",
+      "description": false,
+      "price_adjustment": false,
+      "image": false
+    }, {
+      "name": "38\" Waist",
+      "description": false,
+      "price_adjustment": false,
+      "image": false
+    }, {
+      "name": "40\" Waist",
+      "description": false,
+      "price_adjustment": false,
+      "image": false
+    }, {
+      "name": "42\" Waist",
+      "description": false,
+      "price_adjustment": false,
+      "image": false
+    }, {
+      "name": "44\" Waist",
+      "description": false,
+      "price_adjustment": false,
+      "image": false
+    }, {
+      "name": "46\" Waist",
+      "description": false,
+      "price_adjustment": false,
+      "image": false
+    }, {
+      "name": "48\" Waist",
+      "description": false,
+      "price_adjustment": false,
+      "image": false
+    }], [{
+      "name": "26\" Length",
+      "description": false,
+      "price_adjustment": false,
+      "image": false
+    }, {
+      "name": "28\" Length",
+      "description": false,
+      "price_adjustment": false,
+      "image": false
+    }, {
+      "name": "30\" Length",
+      "description": false,
+      "price_adjustment": false,
+      "image": false
+    }, {
+      "name": "32\"Length",
+      "description": false,
+      "price_adjustment": false,
+      "image": false
+    }, {
+      "name": "34\" Length",
+      "description": false,
+      "price_adjustment": false,
+      "image": false
+    }, {
+      "name": "36\" Length",
+      "description": false,
+      "price_adjustment": false,
+      "image": false
+    }, {
+      "name": "38\" Length",
+      "description": false,
+      "price_adjustment": false,
+      "image": false
+    }, {
+      "name": "40\" Length",
+      "description": false,
+      "price_adjustment": false,
+      "image": false
+    }, {
+      "name": "42\" Length",
+      "description": false,
+      "price_adjustment": false,
+      "image": false
+    }, {
+      "name": "44\" Length",
+      "description": false,
+      "price_adjustment": false,
+      "image": false
+    }, {
+      "name": "46\" Length",
+      "description": false,
+      "price_adjustment": false,
+      "image": false
+    }, {
+      "name": "48\" Length",
+      "description": false,
+      "price_adjustment": false,
+      "image": false
+    }]],
+    "categories": ["pants"],
+    "featured": false,
+    "mix_match": false,
+    "shipping": false
+  }, {
+    "name": "Athletic Shorts",
+    "slug": "athletic-shorts",
+    "description": false,
+    "prices": [{
+      "min_qty": false,
+      "max_qty": false,
+      "value": 24.49
+    }],
+    "images": [{
+      "src": "images/product-athletic-shorts.jpg",
+      "thumb": "images/product-athletic-shorts.jpg",
+      "caption": ""
+    }],
+    "options": [],
+    "categories": ["pants"],
+    "featured": false,
+    "mix_match": false,
+    "shipping": false
+  }, {
+    "name": "Unisex T-Shirts",
+    "slug": "unisex-t-shirts",
+    "description": false,
+    "prices": [{
+      "min_qty": false,
+      "max_qty": 11,
+      "value": 12.99
+    }, {
+      "min_qty": 12,
+      "max_qty": 23,
+      "value": 10.49
+    }, {
+      "min_qty": 24,
+      "max_qty": false,
+      "value": 8.99
+    }],
+    "images": [{
+      "src": "images/product-t-shirts.jpg",
+      "thumb": "images/product-t-shirts.jpg",
+      "caption": ""
+    }],
+    "options": [[{
+      "name": "Black",
+      "description": false,
+      "price_adjustment": false,
+      "image": false
+    }, {
+      "name": "Red",
+      "description": false,
+      "price_adjustment": false,
+      "image": false
+    }, {
+      "name": "Green",
+      "description": false,
+      "price_adjustment": false,
+      "image": false
+    }, {
+      "name": "Blue",
+      "description": false,
+      "price_adjustment": false,
+      "image": false
+    }, {
+      "name": "Orange",
+      "description": false,
+      "price_adjustment": false,
+      "image": false
+    }, {
+      "name": "Pink",
+      "description": false,
+      "price_adjustment": false,
+      "image": false
+    }, {
+      "name": "Yellow",
+      "description": false,
+      "price_adjustment": false,
+      "image": false
+    }], [{
+      "name": "Medium",
+      "description": false,
+      "price_adjustment": false,
+      "image": false
+    }, {
+      "name": "X Small",
+      "description": false,
+      "price_adjustment": false,
+      "image": false
+    }, {
+      "name": "Small",
+      "description": false,
+      "price_adjustment": false,
+      "image": false
+    }, {
+      "name": "Large",
+      "description": false,
+      "price_adjustment": false,
+      "image": false
+    }, {
+      "name": "X Large",
+      "description": false,
+      "price_adjustment": false,
+      "image": false
+    }, {
+      "name": "XX Large",
+      "description": false,
+      "price_adjustment": false,
+      "image": false
+    }]],
+    "categories": ["shirts"],
+    "featured": false,
+    "mix_match": true,
+    "shipping": false
+  }, {
+    "name": "Womens Longsleeve T-Shirt",
+    "slug": "womens-longsleeve-t-shirt",
+    "description": false,
+    "prices": [{
+      "min_qty": false,
+      "max_qty": 11,
+      "value": 14.99
+    }, {
+      "min_qty": 12,
+      "max_qty": 23,
+      "value": 12.49
+    }, {
+      "min_qty": 24,
+      "max_qty": false,
+      "value": 10.99
+    }],
+    "images": [{
+      "src": "images/product-womens-longsleeve-t-shirt.jpg",
+      "thumb": "images/product-womens-longsleeve-t-shirt.jpg",
+      "caption": ""
+    }],
+    "options": [],
+    "categories": ["shirts"],
+    "featured": false,
+    "mix_match": false,
+    "shipping": {
+      "type": "each",
+      "value": 10.99
+    }
+  }],
+  "categories": [{
+    "name": "Food",
+    "slug": "food",
+    "description": "Things you can eat",
+    "image": {
+      "src": "images/category-food.jpg",
+      "thumb": "images/category-food.jpg",
+      "caption": ""
+    },
+    "parent": false
+  }, {
+    "name": "Meat",
+    "slug": "meat",
+    "description": "PETA (People Eating Tasty Animals)",
+    "image": {
+      "src": "images/category-meat.jpg",
+      "thumb": "images/category-food.jpg",
+      "caption": ""
+    },
+    "parent": "food"
+  }, {
+    "name": "Vegetables",
+    "slug": "vegetables",
+    "description": "Healthy things you can eat that grow on the ground.",
+    "image": {
+      "src": "images/category-vegetables.jpg",
+      "thumb": "images/category-vegetables.jpg",
+      "caption": ""
+    },
+    "parent": "food"
+  }, {
+    "name": "Fruits",
+    "slug": "fruits",
+    "description": "Healthy things you can eat that grow on trees.",
+    "image": {
+      "src": "images/category-fruits.jpg",
+      "thumb": "images/category-fruits.jpg",
+      "caption": ""
+    },
+    "parent": "food"
+  }, {
+    "name": "Clothes",
+    "slug": "clothes",
+    "description": "Things you wear",
+    "image": {
+      "src": "images/category-clothes.jpg",
+      "thumb": "images/category-clothes.jpg",
+      "caption": ""
+    },
+    "parent": false
+  }, {
+    "name": "Pants",
+    "slug": "pants",
+    "description": "Things you wear on your legs",
+    "image": {
+      "src": "images/category-pants.jpg",
+      "thumb": "images/category-pants.jpg",
+      "caption": ""
+    },
+    "parent": "clothes"
+  }, {
+    "name": "Shirts",
+    "slug": "shirts",
+    "description": "Things you wear on your torso",
+    "image": {
+      "src": "images/category-shirts.jpg",
+      "thumb": "images/category-shirts.jpg",
+      "caption": ""
+    },
+    "parent": "clothes"
+  }]
+}
